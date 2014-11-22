@@ -1,18 +1,25 @@
-# tabnav, pillnav, linenav
+<!DOCTYPE html>
+<html>
+<head>
 
-导航
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no">
 
-* 有 `<jie-tabnav>`、`<jie-pillnav>`、`<jie-linenav>` 3 种内置样式
-* 可以结合 horizontal layout flex 等特性达到类似 justified 的效果
+<title>Jie Nav</title>
 
-## Example
+<script src="../webcomponentsjs/webcomponents.js"></script>
+<link rel="import" href="jie-nav.html">
 
-```
+</head>
+<body>
+
 <jie-tabnav>
   <li name="item1" active>ITEM 1</li>
   <li name="item2">ITEM 2</li>
   <li name="item3">ITEM 3</li>
 </jie-tabnav>
+
+<hr>
 
 <jie-pillnav selected="1">
   <li name="item1">ITEM 1</li>
@@ -20,9 +27,13 @@
   <li name="item3">ITEM 3</li>
 </jie-pillnav>
 
+<hr>
+
 <jie-linenav>
   <li name="item1">ITEM 1</li>
   <li name="item2">ITEM 2</li>
   <li name="item3" active>ITEM 3</li>
 </jie-linenav>
-```
+
+</body>
+</html>

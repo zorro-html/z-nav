@@ -1,0 +1,45 @@
+<!--
+  # pillnav
+
+  药丸导航
+
+  ## Example
+
+  ```
+  <jie-pillnav>
+    <li name="item1" active>ITEM 1</li>
+    <li name="item2">ITEM 2</li>
+    <li name="item3">ITEM 3</li>
+  </jie-pillnav>
+  ```
+-->
+
+<link rel="import" href="jie-nav-base.html">
+
+<polymer-element name="jie-pillnav" extends="jie-nav" noscript>
+
+  <template>
+    <style>
+      :host {
+        display: inline-block;
+      }
+      ::content > li {
+        border-radius: 2px;
+      }
+      ::content > li + li {
+        margin-left: 2px;
+      }
+      ::content > li:hover {
+        border-color: #eeeeee #eeeeee #dddddd;
+      }
+      ::content > li[active],
+      ::content > li[active]:hover,
+      ::content > li[active]:focus {
+        color: #ffffff;
+        background-color: #ff6600;
+      }
+    </style>
+    <shadow></shadow>
+  </template>
+
+</polymer-element>

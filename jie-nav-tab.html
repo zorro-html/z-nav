@@ -1,0 +1,48 @@
+<!--
+  # tabnav
+
+  标签导航
+
+  ## Example
+
+  ```
+  <jie-tabnav>
+    <li name="item1" active>ITEM 1</li>
+    <li name="item2">ITEM 2</li>
+    <li name="item3">ITEM 3</li>
+  </jie-tabnav>
+  ```
+-->
+
+<link rel="import" href="jie-nav-base.html">
+
+<polymer-element name="jie-tabnav" extends="jie-nav" noscript>
+
+  <template>
+    <style>
+      :host {
+        display: inline-block;
+        border-bottom: 1px solid #dddddd;
+      }
+      ::content > li {
+        margin-bottom: -1px;
+        margin-right: 2px;
+        border: 1px solid transparent;
+        border-radius: 2px 2px 0 0;
+      }
+      ::content > li:hover {
+        border-color: #eeeeee #eeeeee #dddddd;
+      }
+      ::content > li[active],
+      ::content > li[active]:hover,
+      ::content > li[active]:focus {
+        color: #666666;
+        background-color: #ffffff;
+        border: 1px solid #dddddd;
+        border-bottom-color: transparent;
+      }
+    </style>
+    <shadow></shadow>
+  </template>
+
+</polymer-element>
