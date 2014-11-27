@@ -25,7 +25,7 @@
       domReady: function () {
         var activeLi = this.querySelector('[active]');
         if (activeLi) {
-          this.selected = this.indexOf(activeLi);
+          this.selected = activeLi.getAttribute(this.valueattr);
         }
       },
       indexOf: function (li) {
