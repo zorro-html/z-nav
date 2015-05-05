@@ -1,27 +1,32 @@
 <!--
-  # nav
 
-  导航抽象类
+@element z-nav
 
-  * 可扩展为多种样式
-  * 可以结合 horizontal layout flex 等特性达到类似 justified 的效果
+# `<z-nav>`
+
+abstract nav element
+
+- extendable
+- could add attributes like `[horizontal]` `[layout]` `[flex]` to make `justified` effect
+
 -->
 
 <link rel="import" href="../polymer/polymer.html">
 <link rel="import" href="../core-selector/core-selector.html">
 
-<polymer-element name="jie-nav" extends="core-selector" selectedClass="">
+<polymer-element name="z-nav" extends="core-selector" selectedClass="">
 
   <template>
     <style>
       ::content li {list-style: none; display: inline-block; cursor: default;}
-      ::content > li {padding: 6px 15px;}
+      polyfill-next-selector { content: ':host > li'; }
+      ::content > li {padding: 6px 15px; text-align: center;}
     </style>
     <shadow></shadow>
   </template>
 
   <script>
-    Polymer('jie-nav', {
+    Polymer('z-nav', {
       domReady: function () {
         var activeLi = this.querySelector('[active]');
         if (activeLi) {
