@@ -17,15 +17,19 @@ nav with pills style
       :host {
         display: inline-block;
       }
+      polyfill-next-selector { content: ':host > li'; }
       ::content > li {
         border-radius: 2px;
       }
+      polyfill-next-selector { content: ':host > li + li'; }
       ::content > li + li {
         margin-left: 2px;
       }
+      polyfill-next-selector { content: ':host > li:hover'; }
       ::content > li:hover {
         border-color: #eeeeee #eeeeee #dddddd;
       }
+      polyfill-next-selector { content: ':host > li[active], :host > li[active]:hover, :host > li[active]:focus'; }
       ::content > li[active],
       ::content > li[active]:hover,
       ::content > li[active]:focus {

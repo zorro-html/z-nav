@@ -17,12 +17,15 @@ nav with underlines style
       :host {
         display: inline-block;
       }
+      polyfill-next-selector { content: ':host > li'; }
       ::content > li {
         border-bottom: 3px solid transparent;
       }
+      polyfill-next-selector { content: ':host > li + li'; }
       ::content > li + li {
         margin-left: 2px;
       }
+      polyfill-next-selector { content: ':host > li[active], :host > li[active]:hover, :host > li[active]:focus'; }
       ::content > li[active],
       ::content > li[active]:hover,
       ::content > li[active]:focus {

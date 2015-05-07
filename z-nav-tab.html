@@ -18,15 +18,18 @@ nav with tabs style
         display: inline-block;
         border-bottom: 1px solid #dddddd;
       }
+      polyfill-next-selector { content: ':host > li'; }
       ::content > li {
         margin-bottom: -1px;
         margin-right: 2px;
         border: 1px solid transparent;
         border-radius: 2px 2px 0 0;
       }
+      polyfill-next-selector { content: ':host > li:hover'; }
       ::content > li:hover {
         border-color: #eeeeee #eeeeee #dddddd;
       }
+      polyfill-next-selector { content: ':host > li[active], :host > li[active]:hover, :host > li[active]:focus'; }
       ::content > li[active],
       ::content > li[active]:hover,
       ::content > li[active]:focus {
