@@ -4,6 +4,12 @@
 - 3 styles: `<z-tabnav>`, `<z-pillnav>`, `<z-linenav>`
 - could add attributes like `[horizontal]` `[layout]` `[flex]` to make `justified` effect
 
+## Import
+
+```
+<link rel="import" href="z-nav/z-nav.html">
+```
+
 ## Examples
 
 ### Tabs
